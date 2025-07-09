@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhil Valluparambil - Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dot-pattern-layer"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AV</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+            </div>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-gradient">Akhil Valluparambil</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Full Stack Developer</h2>
+                    <p class="hero-description">
+                        I create modern, responsive web applications with clean code and exceptional user experiences.
+                        Passionate about turning ideas into reality through innovative technology solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-img">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-element" style="--delay: 0s">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="floating-element" style="--delay: 1s">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="floating-element" style="--delay: 2s">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate full-stack developer with a keen eye for design and a love for creating 
+                        seamless digital experiences. With expertise in modern web technologies, I specialize in 
+                        building scalable applications that solve real-world problems.
+                    </p>
+                    <p>
+                        My journey in tech started with curiosity and has evolved into a career focused on 
+                        continuous learning and innovation. I believe in writing clean, maintainable code and 
+                        staying up-to-date with the latest industry trends and best practices.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>25+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technologies I Work With</h2>
+            <p class="skills-subtitle">Building modern applications with industry-leading tools and frameworks</p>
+            
+            <div class="tech-grid">
+                <div class="tech-item java">
+                    <div class="tech-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <span class="tech-name">Java</span>
+                </div>
+                
+                <div class="tech-item flutter">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40">
+                            <path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm-.014 11.072L7.857 17.514l6.457 6.457H21.7L14.307 16.6l7.357-7.357H14.3z"/>
+                        </svg>
+                    </div>
+                    <span class="tech-name">Flutter</span>
+                </div>
+                
+                <div class="tech-item react">
+                    <div class="tech-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <span class="tech-name">React</span>
+                </div>
+                
+                <div class="tech-item javascript">
+                    <div class="tech-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <span class="tech-name">JavaScript</span>
+                </div>
+                
+                <div class="tech-item nodejs">
+                    <div class="tech-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <span class="tech-name">Node.js</span>
+                </div>
+                
+                <div class="tech-item python">
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <span class="tech-name">Python</span>
+                </div>
+                
+                <div class="tech-item html">
+                    <div class="tech-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <span class="tech-name">HTML5</span>
+                </div>
+                
+                <div class="tech-item css">
+                    <div class="tech-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <span class="tech-name">CSS3</span>
+                </div>
+                
+                <div class="tech-item mongodb">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <span class="tech-name">MongoDB</span>
+                </div>
+                
+                <div class="tech-item aws">
+                    <div class="tech-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <span class="tech-name">AWS</span>
+                </div>
+                
+                <div class="tech-item git">
+                    <div class="tech-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <span class="tech-name">Git</span>
+                </div>
+                
+                <div class="tech-item docker">
+                    <div class="tech-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <span class="tech-name">Docker</span>
+                </div>
+                
+                <div class="tech-item figma">
+                    <div class="tech-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <span class="tech-name">Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with React frontend, Node.js backend, and payment integration.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative task management application with real-time updates and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Express.js</span>
+                            <span>Socket.io</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Data visualization dashboard with interactive charts and real-time analytics for business insights.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>D3.js</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather App</h3>
+                        <p>Progressive web app for weather forecasting with offline support and location-based services.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>PWA</span>
+                            <span>Weather API</span>
+                            <span>Service Workers</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Personal Blog Platform</h3>
+                        <p>Content management system with markdown support, SEO optimization, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>Prisma</span>
+                            <span>MySQL</span>
+                            <span>Vercel</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chatbot</h3>
+                        <p>Intelligent chatbot with natural language processing and integration with popular messaging platforms.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Flask</span>
+                            <span>NLP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="education-parallax-bg">
+            <div class="parallax-element" data-speed="0.5">
+                <div class="floating-shape shape-1"></div>
+            </div>
+            <div class="parallax-element" data-speed="0.3">
+                <div class="floating-shape shape-2"></div>
+            </div>
+            <div class="parallax-element" data-speed="0.7">
+                <div class="floating-shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            
+            <!-- Academic Degrees -->
+            <div class="education-section">
+                <h3 class="education-subtitle">Academic Degrees</h3>
+                <div class="degree-timeline">
+                    <div class="degree-item">
+                        <div class="degree-content">
+                            <div class="degree-logo">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="degree-info">
+                                <div class="degree-header">
+                                    <div class="degree-title-section">
+                                        <h3>Master of Science</h3>
+                                        <h4>Computer Science & Engineering</h4>
+                                    </div>
+                                    <div class="degree-date">2024</div>
+                                </div>
+                                <div class="degree-institution">Stanford University • Stanford, CA</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="degree-item">
+                        <div class="degree-content">
+                            <div class="degree-logo">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="degree-info">
+                                <div class="degree-header">
+                                    <div class="degree-title-section">
+                                        <h3>Bachelor of Technology</h3>
+                                        <h4>Computer Science Engineering</h4>
+                                    </div>
+                                    <div class="degree-date">2022</div>
+                                </div>
+                                <div class="degree-institution">University of Technology • Boston, MA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Professional Certifications -->
+            <div class="education-section">
+                <h3 class="education-subtitle">Professional Certifications</h3>
+                <div class="certifications-grid">
+                    <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank" class="cert-card">
+                        <div class="cert-badge aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h4>AWS Solutions Architect</h4>
+                            <p class="cert-issuer">Amazon Web Services</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://cloud.google.com/certification/cloud-architect" target="_blank" class="cert-card">
+                        <div class="cert-badge gcp">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Google Cloud Professional</h4>
+                            <p class="cert-issuer">Google Cloud Platform</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://docs.microsoft.com/en-us/learn/certifications/azure-developer/" target="_blank" class="cert-card">
+                        <div class="cert-badge azure">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h4>Azure Developer Associate</h4>
+                            <p class="cert-issuer">Microsoft</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Full Stack Developer</h3>
+                        <h4>Tech Solutions Inc.</h4>
+                        <span class="timeline-date">2023 - Present</span>
+                        <p>Leading development of scalable web applications using React, Node.js, and cloud services. 
+                           Mentoring junior developers and implementing best practices for code quality and performance.</p>
+                        <div class="timeline-skills">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>AWS</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <h4>Digital Innovations Ltd.</h4>
+                        <span class="timeline-date">2022 - 2023</span>
+                        <p>Developed and maintained multiple client projects using modern web technologies. 
+                           Collaborated with design teams to create responsive and user-friendly interfaces.</p>
+                        <div class="timeline-skills">
+                            <span>Vue.js</span>
+                            <span>Express.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Junior Web Developer</h3>
+                        <h4>StartUp Hub</h4>
+                        <span class="timeline-date">2021 - 2022</span>
+                        <p>Built responsive websites and web applications. Gained experience in agile development 
+                           methodologies and version control systems.</p>
+                        <div class="timeline-skills">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Git</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>akhil.valluparambil@email.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Akhil Valluparambil. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
