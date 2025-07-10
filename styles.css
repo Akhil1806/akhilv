@@ -75,6 +75,8 @@
 /* Base Styles with Tech Background */
 html {
     scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -84,6 +86,8 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+    min-height: 100%;
+    width: 100%;
 }
 
 /* Global Parallax Background */
@@ -641,20 +645,75 @@ section + section {
 @media (max-width: 768px) {
     :root {
         --section-padding: 70px 0;
+        --container-padding: 0 15px;
     }
     
     section + section {
         padding-top: 50px;
+    }
+    
+    /* Ensure backgrounds cover properly */
+    body::before, body::after, .dot-pattern-layer {
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+        left: 0;
     }
 }
 
 @media (max-width: 480px) {
     :root {
         --section-padding: 60px 0;
+        --container-padding: 0 12px;
     }
     
     section + section {
         padding-top: 40px;
+    }
+    
+    /* Fix background elements on mobile */
+    body::before, 
+    body::after, 
+    .dot-pattern-layer {
+        width: 100%;
+        min-height: 100vh;
+        background-attachment: fixed;
+    }
+    
+    [data-theme="light"] body::after {
+        opacity: 0.35;
+        background-size: 25px 25px;
+    }
+    
+    .container {
+        padding: var(--container-padding);
+        width: 100%;
+    }
+}
+
+/* Mobile fixes for edge cases */
+@media screen and (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    body::before, 
+    body::after, 
+    .dot-pattern-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+    }
+    
+    .container {
+        max-width: 100%;
+        width: auto;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 }
 
@@ -1132,6 +1191,25 @@ section + section {
     
     .nav-logo {
         transform: translateX(-45%);
+    }
+}
+
+/* Mobile background fixes */
+@media (max-width: 768px) {
+    body::before,
+    body::after,
+    .dot-pattern-layer {
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    [data-theme="light"] body::after {
+        opacity: 0.35;
+        background-size: 30px 30px;
     }
 }
 
@@ -1614,15 +1692,15 @@ section + section {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         border-top: 1px solid var(--border-color);
     }
-
+    
     .nav-menu.active {
         left: 0;
     }
-
+    
     .nav-menu li {
         margin: 20px 0;
     }
-
+    
     .nav-container {
         display: flex;
         justify-content: space-between;
@@ -1733,18 +1811,29 @@ section + section {
     }
 }
 
-@media (max-width: 360px) {
-    .nav-container {
-        padding: 0 10px;
+/* Mobile fixes for edge cases */
+@media screen and (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
     }
     
-    .theme-toggle {
-        width: 32px;
-        height: 32px;
+    body::before, 
+    body::after, 
+    .dot-pattern-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
     }
     
-    .nav-logo {
-        transform: translateX(-45%);
+    .container {
+        max-width: 100%;
+        width: auto;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 }
 
@@ -2088,89 +2177,74 @@ section + section {
         gap: 40px;
     }
     
-    .about-stats {
-        flex-direction: row;
-        justify-content: space-between;
+    .about {
+        padding: var(--section-padding);
+    }
+
+    .nav-actions {
+        order: 3;
+        flex: 0 0 auto;
+        margin-left: auto;
+        z-index: 1001;
+    }
+
+    .theme-toggle {
+        width: 35px;
+        height: 35px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .degree-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
     }
     
-    .stat-item {
-        padding: 20px;
-        flex: 1;
+    .degree-date {
+        align-self: flex-end;
+        margin-top: -5px;
     }
     
-    .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    .certifications-grid {
+        grid-template-columns: 1fr;
         gap: 20px;
     }
     
+    .cert-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 15px;
+    }
+    
     .skill-item {
-        padding: 20px 15px;
+        padding: 15px 10px;
+        height: 100px;
     }
     
     .skill-item i {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 6px;
     }
     
-    .timeline {
-        padding-left: 0;
-    }
-    
-    .timeline::before {
-        left: 15px;
-    }
-    
-    .timeline-item {
-        padding-left: 50px;
-    }
-    
-    .timeline-marker {
-        left: 5px;
-        width: 20px;
-        height: 20px;
-    }
-    
-    .education-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
-    .hero-buttons {
-        justify-content: center;
-    }
-    
-    .footer-content {
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .footer-links {
-        flex-wrap: wrap;
-        justify-content: center;
+    .floating-shape {
+        width: 100px;
+        height: 100px;
     }
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn {
-        width: 100%;
-        max-width: 200px;
-        text-align: center;
+    .theme-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: var(--font-size-sm);
     }
     
     .degree-card {
@@ -2188,49 +2262,34 @@ section + section {
     }
     
     .cert-badge {
-        width: 40px;
-        height: 40px;
-        font-size: var(--font-size-lg);
+        width: 60px;
+        height: 60px;
+        font-size: var(--font-size-xl);
     }
 }
 
-@media (max-width: 360px) {
-    .nav-container {
-        padding: 0 10px;
+/* Mobile fixes for edge cases */
+@media screen and (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
     }
     
-    .theme-toggle {
-        width: 32px;
-        height: 32px;
+    body::before, 
+    body::after, 
+    .dot-pattern-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
     }
     
-    .nav-logo {
-        transform: translateX(-45%);
-    }
-}
-
-/* Adjust spacing between consecutive sections */
-section + section {
-    padding-top: 60px;
-}
-
-/* Adjust section padding in mobile */
-@media (max-width: 768px) {
-    :root {
-        --section-padding: 70px 0;
-    }
-    
-    section + section {
-        padding-top: 50px;
-    }
-}
-
-@media (max-width: 480px) {
-    :root {
-        --section-padding: 60px 0;
-    }
-    
-    section + section {
-        padding-top: 40px;
+    .container {
+        max-width: 100%;
+        width: auto;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 }
