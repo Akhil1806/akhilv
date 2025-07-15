@@ -46,37 +46,44 @@ A modern, professional portfolio website built with HTML, CSS, and JavaScript fe
 ## 📄 Sections Overview
 
 ### Hero Section
+
 - Professional introduction with animated elements
 - Call-to-action buttons
 - Floating technology icons
 
 ### About Section
+
 - Personal description
 - Professional statistics
 - Achievement counters
 
 ### Skills Section
+
 - Technology categories (Frontend, Backend, Tools)
 - Interactive skill cards with hover effects
 - Technology icons and labels
 
 ### Experience Section
+
 - Timeline layout with work history
 - Job descriptions and technology tags
 - Progressive disclosure design
 
 ### Education Section
+
 - Educational background cards
 - Certifications and achievements
 - Institution details and dates
 
 ### Projects Section
+
 - Portfolio showcase grid
 - Project cards with overlay effects
 - Technology stack tags
 - External links for demos and source code
 
 ### Contact Section
+
 - Contact information display
 - Working contact form with validation
 - Social media links
@@ -108,7 +115,9 @@ A modern, professional portfolio website built with HTML, CSS, and JavaScript fe
 ## ✏️ Customization
 
 ### Personal Information
+
 Update the following in `index.html`:
+
 - Name and title in the hero section
 - About section description
 - Experience and education details
@@ -117,14 +126,18 @@ Update the following in `index.html`:
 - Social media links
 
 ### Styling
+
 Modify `styles.css` to change:
+
 - Color scheme (CSS custom properties in `:root`)
 - Typography and spacing
 - Animation timing and effects
 - Layout breakpoints
 
 ### Functionality
+
 Enhance `script.js` to add:
+
 - Form submission to email services
 - Additional animations
 - Theme switching
